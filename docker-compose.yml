@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  exifbot:
+    image: golang:1.22.0-alpine
+    build: ./
+    command: ./exifbot
+    restart: always
+    container_name: exifbot
+    volumes:
+      - ./config:/config
+    environment:
+      EXIFBOT_CONFIG: "/config/exifbot.json"

@@ -1,0 +1,20 @@
+{
+  "database": {
+    "driver": "postgres",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "username": "exifbot",
+    "password": "change-me",
+    "database": "exifbot"
+  },
+  "bot": {
+    "token": "telegram bot token",
+    "update_timeout": 60,
+    "command_workers_pool_size": 5,
+    "sender_workers_pool_size": 20,
+    "debug": false
+  },
+  "parser": {
+    "workers_pool_size": 20
+  }
+}
